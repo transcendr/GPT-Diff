@@ -1,1 +1,24 @@
+{
+  "name": "gpt-diff",
+  "version": "1.0.0",
+  "description": "GPT your Git diff",
+  "main": "index.js",
+  "scripts": {
+    "test": "node gdsum.js"
+  },
+  "bin": {
+    "gdsum": "bin/gdsum.sh"
+  },
+  "keywords": [
+    "gpt",
+    "git",
+    "openai"
+  ],
+  "author": "Bryan Price-Mc.",
+  "email": "bryan@koy.dev",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "openai": "^3.1.0"
+  }
 }
