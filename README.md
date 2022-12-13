@@ -16,13 +16,30 @@ ATM, rate-limiting is not implemented, but at 40 requests / minute, you mostly s
 - being able to pass in custom API options as args
 - pre-fixing or replacing the default prompt
 - splitting the results by file or directory
-- custom diffing (right now it only does `git diff`)
+[x] custom diffing (right now it only does `git diff`)
 - etc.
 
-## Example output:
-`git-diff`
+## Usages
 
 ```bash
+# Run it with defaults, requires confirmation, diffs against HEAD
+gpt-diff
+
+# Run it with y flag, skips confirmation, diffs against HEAD
+gpt-diff y
+
+# Run it with y flag and a custom diff, skips confirmation and diff against custom diff 
+gpt-diff y HEAD~1
+
+# Omit the y flag and use a custom diff, requires confirmation and diff against custom diff
+gpt-diff HEAD~1
+```
+
+## Example output:
+
+```bash
+$: gpt-diff
+
 This gdsum will require 1 requests. Continue? [y/n] (selecting n will exit) y
 
 Processing chunk 1 with a length of 3000 and max tokens at 2500
