@@ -76,3 +76,24 @@ Processing chunk 1 with a length of 548 and max tokens at 3726
 • Added name, version, description, main, scripts, bin, keywords, author, email, license, dependencies, and child_process. 
 • Updated dependencies to include openai.
 ```
+
+# Miscellaneous
+
+1. Consider adding this to your `.bashrc` or `.zshrc`:
+
+```bash
+# GPT Diff
+alias gptd="gpt-diff"
+# or...
+alias gptd="gpt-diff y"
+```
+
+# Known issues
+
+[ ] the copy to clipboard operation doesn't consistently work yet
+[ ] a calculation of required tokens is used to set a `max_tokens` argument on the API call. This is not always accurate and can result in a 400 error. If you see this, try again with a smaller diff.
+
+
+
+
+

@@ -1,17 +1,21 @@
 {
   "name": "gpt-diff",
-  "version": "1.0.3",
+  "version": "1.0.7",
+  "repository": "https://github.com/transcendr/GPT-Diff",
   "description": "GPT your Git diff",
   "main": "index.js",
   "scripts": {
     "test": "node gdsum.js"
   },
   "bin": {
-    "gpt-diff": "./bin/gdsum.sh"
+    "gpt-diff": "./bin/gpt-diff.sh"
   },
   "preferGlobal": true,
   "keywords": [
     "gpt",
+    "gpt-3",
+    "chatgpt",
+    "chat-gpt",
     "git",
     "openai"
   ],
