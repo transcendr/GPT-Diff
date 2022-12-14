@@ -7,8 +7,9 @@
     "test": "node gdsum.js"
   },
   "bin": {
-    "gdsum": "bin/gdsum.sh"
+    "gpt-diff": "./bin/gdsum.sh"
   },
+  "preferGlobal": true,
   "keywords": [
     "gpt",
     "git",
