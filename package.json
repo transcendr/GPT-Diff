@@ -1,6 +1,6 @@
 {
   "name": "gpt-diff",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "repository": "https://github.com/transcendr/GPT-Diff",
   "description": "GPT your Git diff",
   "main": "index.js",

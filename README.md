@@ -13,11 +13,13 @@ To skip the confirmation prompt, use the `y` flag, `gpt-diff y`, otherwise you w
 
 ATM, rate-limiting is not implemented, but at 40 requests / minute, you mostly should not be affected by it.  Try smaller diffs if you are or I'd be happy to merge any contribution be it this or other cool stuff I'd like such as:
 
-- being able to pass in custom API options as args
-- pre-fixing or replacing the default prompt
-- splitting the results by file or directory
+[ ] being able to pass in custom API options as args
+
+[ ] pre-fixing or replacing the default prompt
+
+[ ] splitting the results by file or directory
+
 [x] custom diffing (right now it only does `git diff`)
-- etc.
 
 ## Usages
 
@@ -91,7 +93,8 @@ alias gptd="gpt-diff y"
 # Known issues
 
 [ ] the copy to clipboard operation doesn't consistently work yet
-[ ] a calculation of required tokens is used to set a `max_tokens` argument on the API call. This is not always accurate and can result in a 400 error. If you see this, try again with a smaller diff.
+
+[ ] a rough calculation of required tokens is used to set a `max_tokens` option on the API call, based on the length of the diff chunk. This is not always accurate and can result in a 400 error. A more reliable method is needed.
 
 
 
