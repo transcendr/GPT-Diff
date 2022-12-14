@@ -28,8 +28,8 @@ const acceptYes = process.argv[2] || "unset";
 // Max chunk size
 const maxChunkSize = 3000;
 
-// Get the branch from args or default to main
-const branch = process.argv[3] || "main";
+// Get the branch from args or default to HEAD
+const branch = process.argv[3] || "HEAD";
 // Define the diff command
 const diffCommand = `git diff ${branch}`; // --unified=0
 

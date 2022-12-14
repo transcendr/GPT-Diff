@@ -1,7 +1,6 @@
 # Get the path to this script
-echo "Running gdsum..."
-SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-echo "Path: $SCRIPT_PATH"
+echo "Running GPT Diff"
+SCRIPT_PATH="$( npm explore -g gpt-diff -- "pwd" )"
 
 if [ "$1" = "y" ]; then
   gdsum_output=$(node "$SCRIPT_PATH/index.js" y $2)
