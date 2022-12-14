@@ -21,6 +21,18 @@ ATM, rate-limiting is not implemented, but at 40 requests / minute, you mostly s
 
 [x] custom diffing (right now it only does `git diff`)
 
+## Installation
+
+```bash
+npm install -g gpt-diff
+```
+
+...or via npx (no install required)
+
+```bash
+npx gpt-diff
+```
+
 ## Usages
 
 ```bash
