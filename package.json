@@ -1,6 +1,6 @@
 {
   "name": "gpt-diff",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "GPT your Git diff",
   "main": "index.js",
   "scripts": {
